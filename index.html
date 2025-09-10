@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KJ Kunal Gamer - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+/* Slider Menu */
+nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background: #000; /* pure dark black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.6s ease-in-out;
+  z-index: 1000;
+}
+
+nav.active {
+  right: 0;
+}
+
+    
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="https://yt3.googleusercontent.com/FS4S_YyCCOrMsCCCyMuAQ5UnjIL95yfpsBhNoLaz-Xph5UQ7BPBUcCsENgBOKPuIyzCLChhA=s160-c-k-c0x00ffffff-no-rj" alt="KJ Kunal Gamer Logo" class="logo-img" />
+      <h1 class="site-title">KJ Kunal Gamer</h1>
+    </div>
+    
+    <!-- Mobile menu icon (Hamburger) -->
+    <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+    </div>
+
+    <!-- Navigation menu -->
+    <nav>
+      <ul class="nav-links" id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="collaboration.html">Collaboration</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Slider -->
+  <section class="hero-slider fullscreen">
+    <div class="slide fade">
+      <img src="https://www.minecraft.net/content/dam/minecraftnet/community/events/cy2025/sandstorm/Wallpapers_Carousel_MCM-Bees_1110x624.jpg" alt="Epic Gameplay" />
+      <div class="slide-text left">
+        <h2>EPIC GAMEPLAY</h2>
+        <p>Witness the most intense moments and clutch plays from my latest streams.</p>
+        <a href="videos.html" class="btn">Watch Now</a>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="https://www.minecraft.net/content/dam/minecraftnet/community/events/cy2025/sandstorm/Wallpapers_Carousel_MCM-Portal_1110x624.jpg" alt="Collaborate" />
+      <div class="slide-text left">
+        <h2>LET'S COLLABORATE</h2>
+        <p>Have a great idea for a project? Let's team up and create something amazing together.</p>
+        <a href="collaboration.html" class="btn">Apply Now</a>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/MC-Downloadables_Image-0_15th-Anniversary_1110x624.jpg" alt="Join the Community" />
+      <div class="slide-text left">
+        <h2>JOIN THE COMMUNITY</h2>
+        <p>Connect with fellow gamers, share your highlights, and be part of the crew.</p>
+        <a href="https://discord.com/invite/gC5ZG4qXwq" target="_blank" class="btn">Join Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h1>My Videos</h1>
+    <div class="video-grid">
+      <div class="video-card">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/4jjknv0rTq0?si=H2BEjkZRX3ZHAvss" frameborder="0" allowfullscreen></iframe>
+        <p>LUCKY BLOCK RACE WITH MY FRIEND | MINECRAFT</p>
+      </div>
+      <div class="video-card">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/EIx4EiDCkYQ?si=Y3HqcayDvgN8qEYf" frameborder="0" allowfullscreen></iframe>
+        <p>🔥[GOD SEED] Seed for Bedrock and PE | MINECRAFT</p>
+      </div>
+      <div class="video-card">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/Ni_G7aDbR0o?si=akwUQgKkvQnGhenS" frameborder="0" allowfullscreen></iframe>
+        <p>Crocodile Attacked Catnap and Scarlet in Jungle</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm <strong>KJ Kunal Gamer</strong>, a passionate gamer and content creator.
+      I love sharing gameplay, tips, and entertaining videos with my community. I started my journey as a gamer out of sheer passion for virtual worlds and competitive gameplay. Over the years, this passion evolved into content creation, allowing me to share my experiences, strategies, and hilarious moments with a wider audience.
+      My content focuses on a variety of games, from action-packed shooters to immersive RPGs. What truly drives me is the community we've built together. Every comment, like, and subscription motivates me to push my boundaries and create even better content.
+      When I'm not gaming, I love exploring new technologies, editing videos, and interacting with my followers on social media. This website is a central hub for everything I do. Thanks for stopping by!
+    </p>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com/kjkunalgamer/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Instagram" class="social-icon" />
+      </a>
+      <a href="https://discord.com/invite/gC5ZG4qXwq" target="_blank" aria-label="Discord">
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968898.png" alt="Discord" class="social-icon" />
+      </a>
+      <a href="https://x.com/kjkunalgamer" target="_blank" aria-label="X/Twitter">
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968958.png" alt="X/Twitter" class="social-icon" />
+      </a>
+      <a href="https://www.youtube.com/@kjKunalgamer" target="_blank" aria-label="YouTube">
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" alt="YouTube" class="social-icon" />
+      </a>
+    </div>
+    <div class="footer-meta">
+      ©2025 KJ Kunal Gamer | All Rights Reserved <br />
+      Email: kunalpickax.craft@gmail.com
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
